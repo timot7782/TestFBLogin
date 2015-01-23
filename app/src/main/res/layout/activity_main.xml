@@ -44,4 +44,14 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/authButton"
+        android:layout_alignLeft="@+id/authButton"
+        android:layout_alignStart="@+id/authButton"
+        android:layout_marginTop="71dp"
+        android:layout_alignRight="@+id/authButton"
+        android:layout_alignEnd="@+id/authButton" />
 </RelativeLayout>

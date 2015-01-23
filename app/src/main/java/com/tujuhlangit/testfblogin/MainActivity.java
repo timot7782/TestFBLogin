@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.facebook.widget.ProfilePictureView;
+import com.google.android.gms.common.SignInButton;
 
 import org.w3c.dom.Text;
 
