@@ -133,22 +133,22 @@ public class MainFragment extends Fragment implements View.OnClickListener, Goog
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_main, container, false);
+        /*View view = inflater.inflate(R.layout.activity_main, container, false);
         LoginButton authButton = (LoginButton) view.findViewById(R.id.authButton);
         authButton.setFragment(this);
         userInfoTextView = (TextView) view.findViewById(R.id.userTV);
-        profilePicView = (ProfilePictureView) view.findViewById(R.id.profilePic);
+        //profilePicView = (ProfilePictureView) view.findViewById(R.id.profilePic);
         signInButton = (SignInButton) view.findViewById(R.id.sign_in_button);
         signInButton.setOnClickListener(this);
         if(savedInstanceState==null) {
-            profilePicView.setVisibility(View.INVISIBLE);
+         //   profilePicView.setVisibility(View.INVISIBLE);
         }
         else {
             if(userInfoTextView.getText().equals(null)) {
-                profilePicView.setVisibility(View.INVISIBLE);
+        //        profilePicView.setVisibility(View.INVISIBLE);
             }
             else {
-                profilePicView.setVisibility(View.VISIBLE);
+        //        profilePicView.setVisibility(View.VISIBLE);
             }
         }
         if (savedInstanceState != null) {
@@ -157,7 +157,8 @@ public class MainFragment extends Fragment implements View.OnClickListener, Goog
         }
 
         //mGoogleApiClient = buildGoogleApiClient();
-        return view;
+        return view;*/
+        return null;
     }
 /*
     private GoogleApiClient buildGoogleApiClient() {
@@ -187,7 +188,7 @@ public class MainFragment extends Fragment implements View.OnClickListener, Goog
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v) {/*
         if (!mGoogleApiClient.isConnecting()) {
             // We only process button clicks when GoogleApiClient is not transitioning
             // between connected and not connected.
@@ -197,7 +198,7 @@ public class MainFragment extends Fragment implements View.OnClickListener, Goog
                     resolveSignInError();
                     break;
             }
-        }
+        }*/
     }
 
     private void resolveSignInError() {
@@ -232,7 +233,7 @@ public class MainFragment extends Fragment implements View.OnClickListener, Goog
         }*/
     }
     private void onSessionStateChange(Session session, SessionState state, Exception exception) {
-        if (state.isOpened()) {
+        /*if (state.isOpened()) {
             Log.i(TAG, "Logged in...");
             Request.newMeRequest(session, new Request.GraphUserCallback() {
                 @Override
@@ -240,16 +241,16 @@ public class MainFragment extends Fragment implements View.OnClickListener, Goog
                     if(user!=null) {
                         Log.i(TAG,"The User is=" + user.getName());
                         userInfoTextView.setText("Hi " + user.getName());
-                        profilePicView.setVisibility(View.VISIBLE);
-                        profilePicView.setProfileId(user.getId());
+                        //profilePicView.setVisibility(View.VISIBLE);
+                        //profilePicView.setProfileId(user.getId());
                     }
                 }
             }).executeAsync();
         } else if (state.isClosed()) {
             Log.i(TAG, "Logged out...");
             userInfoTextView.setText("");
-            profilePicView.setProfileId(null);
-            profilePicView.setVisibility(View.INVISIBLE);
-        }
+            //profilePicView.setProfileId(null);
+            //profilePicView.setVisibility(View.INVISIBLE);
+        }*/
     }
 }

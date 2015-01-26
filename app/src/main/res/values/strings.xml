@@ -4,4 +4,10 @@
     <string name="app_name">TestFBLogin</string>
     <string name="action_settings">Settings</string>
     <string name="app_id">697804860332441</string>
+    <string-array name="not_logged_in">
+        <item>Login using Facebook</item>
+        <item>Login using Google+</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
 </resources>
